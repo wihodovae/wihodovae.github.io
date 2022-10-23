@@ -1,0 +1,118 @@
+body {
+    width: 100%;
+}
+
+.box {
+    float: none;
+    width: 100%;
+}
+
+#contact-info .box {
+    border-bottom: #dddddd dotted 1px;
+}
+
+#home-info .info-img {
+    display: none;
+}
+
+#home-info .info-content {
+    float: none;
+    width: 100%;
+}
+
+#navbar .logo {
+    float: none;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#navbar ul,
+#navbar ul li {
+    float: none;
+}
+
+#navbar ul li a {
+    padding: 5px;
+    border-bottom: #dddddd dotted 1px;
+}
+
+#about-info .info-right {
+    display: none;
+}
+
+#about-info .info-left {
+    width: 100%;
+}
+
+#contact-info .inputs {
+    width: 65%;
+}
+
+#showcase {
+    height: 45rem;
+}
+
+#showcase .showcase-content h1 {
+    font-size: 2.8rem;
+}
+
+#about-info .info-right img {
+    display: none;
+}
+
+#about-info .info-left {
+    display: block;
+    width: 100%;
+    min-height: 100%;
+    text-align: justify;
+}
+
+#about-info .info-left p {
+    font-size: 1rem;
+}
+
+#testimonials {
+    height: 45rem;
+    background: none;
+    padding-top: 6.25rem;
+
+}
+
+#testimonials .testimonial {
+    padding: 0.5rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+}
+
+#testimonials .testimonial p {
+    font-size: 1rem;
+    padding: 0.3rem 0.5rem;
+}
+
+#testimonials h2 {
+    font-size: 2rem;
+}
+
+#contact-info h2 {
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+.inputs {
+    margin-left: 4rem;
+    height: 1.7rem;
+    width: 100%;
+    margin-bottom: 1.3rem;
+    font-family: "Segoe UI", sans-serif;
+    margin-top: 0.6rem;
+}
+
+.labels {
+    padding-top: 1.3rem;
+    padding-left: 4rem;
+}
+
+#contactbutton {
+    margin-left: 4rem;
+}
+
