@@ -20,6 +20,11 @@ h3 {
     font-family: 'Quicksand', sans-serif;
 }
 
+footer {
+    background: white;
+    color: white;
+}
+
 /* Utility Classes */
 .l-heading {
     font-size: 4rem;
@@ -56,15 +61,6 @@ h3 {
     text-decoration: none;
 }
 
-.source {
-    font-size: small;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    color: #aaa;
-    margin: 10px 20px;
-}
-
 .container {
     max-width: 1100px;
     margin: auto;
@@ -80,6 +76,7 @@ h3 {
     font-size: 2rem;
     margin-bottom: 0.75rem;
     line-height:  1.1;
+    text-align: center;
 }
 
 .py-1 {
@@ -94,13 +91,49 @@ h3 {
     padding:  3rem 0;
 }
 
+.p-1 {
+    padding:  1.5rem ;
+}
+
+.p-2 {
+    padding: 2.5rem ;
+}
+
+.p-3 {
+    padding:  3.5rem ;
+}
+
 .bg-light {
-    background: #F9F1EA
+    background: #F9F1EA;
+    color: #333333;
 }
 
 .bg-dark {
     color: white;
-    background: #291317;
+    background-color: #291317;
+}
+
+.bg-primary {
+    background-color: white;
+}
+
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: #aaa dotted 1px;
+}
+
+.source {
+    font-size: small;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: gray;
+    margin: 10px 20px;
 }
 
 .source a {
@@ -133,6 +166,8 @@ p {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    z-index: 2;
+    overflow: hidden;
 
 }
 
@@ -176,19 +211,87 @@ p {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#what .items {
+#about {
+    margin: 0;
+}
+#about .items {
     display: flex;
     padding: 1rem;
+    flex: 1;
 }
 
-#what .item {
+#about .item {
     text-align: center;
     padding: 1rem;
+    flex: 1;
 }
 
-#what .items .item i {
+#about .items .item i {
     background: #76858d;
     padding: 1rem;
     border-radius: 50%;
     margin-bottom: 1rem;
+}
+
+#project {
+    display: flex;
+}
+
+#project div {
+    flex: 1;
+}
+
+#project .project-img {
+    background: url(../img/teamphoto.avif) no-repeat center center/cover;
+}
+
+#images .items {
+    display: flex;
+    justify-content: space-between;
+}
+
+#images .items img {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+#contact {
+    display: flex;
+}
+
+#contact div {
+    flex: 1;
+}
+
+#contact .contact-adress {
+    border-top: 1px gray solid;
+}
+#contact .contact-form .form-group {
+    margin: 0.75rem;
+}
+
+#contact .contact-form label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+#contact h3 {
+    margin-top: 2rem;
+}
+
+#contact .btn {
+    margin: 0.75rem;
+}
+
+#contact .btn:hover {
+    background-color: #F9F1EA;
+    border: 1px solid black;
+    color: black;
 }
