@@ -171,12 +171,22 @@ p {
 
 }
 
+#navbar #hambac {
+    display: none;
+}
+
+#navbar i {
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+}
+
 #navbar ul {
     display: flex;
     list-style: none;
     flex-wrap: wrap;
     text-decoration: none;
     align-items: center;
+    list-style: none;
 }
 
 #navbar a {
@@ -247,6 +257,7 @@ p {
 
 #images .items {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -295,3 +306,10 @@ p {
     border: 1px solid black;
     color: black;
 }
+
+#main-footer {
+    display: flex;
+    height: 400px;
+    justify-items: center;
+}
+
