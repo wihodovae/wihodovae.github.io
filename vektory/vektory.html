@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vektory</title>
+  <script>
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+      //Vyplním hodnoty, ať to nemusím pokaždé dělat/
+      document.querySelector("#ax").value = -6;
+      document.querySelector("#ay").value =  2;
+      document.querySelector("#bx").value =  0;
+      document.querySelector("#by").value =  5;
+      document.querySelector("#cx").value = -6;
+      document.querySelector("#cy").value =  2;
+      document.querySelector("#dx").value = -4;
+      document.querySelector("#dy").value = -2;
+
+        document.querySelector("form").onsubmit = () => {
+
+
+    let ax = document.querySelector("#ax").value;
+    let ay = document.querySelector("#ay").value;
+    let bx = document.querySelector("#bx").value;
+    let by = document.querySelector("#by").value;
+    let cx = document.querySelector("#cx").value;
+    let cy = document.querySelector("#cy").value;
+    let dx = document.querySelector("#dx").value;
+    let dy = document.querySelector("#dy").value;
+
+    //Výpočet/
+    let delkau = (Math.sqrt((bx-ax)*(bx-ax) + (by-ay)*(by-ay))).toFixed(2);
+    let delkav = (Math.sqrt((dx-cx)*(dx-cx) + (dy-cy)*(dy-cy))).toFixed(2);
+    let soucin = (bx-ax) * (dx-cx) + (by-ay) * (dy-cy);
+    let odchylka = soucin / delkau * delkav;
+    let odchylkastupne = Math.acos(odchylka)*(180/Math.PI);
+
+    //Výstup/
+    document.querySelector("#delkau").innerHTML = `Délka vektoru u: ${delkau}`;
+    document.querySelector("#delkav").innerHTML = `Délka vektoru v: ${delkav}`;
+    document.querySelector("#soucet").innerHTML = `Součet vektoru u a v: (${(bx-ax) + (dx-cx)},${(by-ay) + (dy-cy)})`;
+    document.querySelector("#rozdil").innerHTML = `Rozdíl vektoru u a v: (${(bx-ax) - (dx-cx)},${(by-ay) - (dy-cy)})`;
+    document.querySelector("#soucin").innerHTML = `Skalární součin vektoru u a v: ${soucin}`;
+    document.querySelector("#odchylka").innerHTML = `Odchylka vektoru u a v: ${odchylkastupne}°`;
+
+    //Stop form from submitting/
+      return false;
+      }
+
+
+
+
+    });
+  </script>
+
+</head>
+<body>
+<ul>
+  <li>VSTUPY</li>
+  <li>VÝSTUPY</li>
+  <li>VĚTVENÍ</li>
+  <li>CYKLY</li>
+  <li>...OSTATNÍ (MATEMATICKÉ A PŘIŘAZOVACÍ OPERACE)</li>
+</ul>
+<form>
+  A:
+  <input type= "number"
+           name= "ax"
+           id= "ax"
+    placeholder = "x">
+  <input type= "number"
+         name= "ay"
+         id= "ay"
+         placeholder = "y"> <br>
+  B:
+  <input type= "number"
+         name= "bx"
+         id= "bx"
+         placeholder = "x">
+  <input type= "number"
+         name= "by"
+         id= "by"
+         placeholder = "y"> <br>
+  C:
+  <input type= "number"
+         name= "cx"
+         id= "cx"
+         placeholder = "x">
+  <input type= "number"
+         name= "cy"
+         id= "cy"
+         placeholder = "y"> <br>
+  D:
+  <input type= "number"
+         name= "dx"
+         id= "dx"
+         placeholder = "x">
+  <input type= "number"
+         name= "dy"
+         id= "dy"
+         placeholder = "y">
+  <input type= "submit"
+         value = "Vypočítat" id="submit">
+</form>
+
+<p><div id="delkau"></div>
+<div id="delkav"></div>
+<div id="soucet"></div>
+<div id="rozdil"></div>
+<div id="soucin"></div>
+<div id="odchylka"></div>
+
+</p>
+
+
+</body>
+</html>
