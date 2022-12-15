@@ -34,7 +34,7 @@
     let delkau = (Math.sqrt((bx-ax)*(bx-ax) + (by-ay)*(by-ay)));
     let delkav = (Math.sqrt((dx-cx)*(dx-cx) + (dy-cy)*(dy-cy)));
     let soucin = (bx-ax) * (dx-cx) + (by-ay) * (dy-cy);
-    let odchylka = soucin / delkau * delkav;
+    let odchylka = soucin / (delkau * delkav);
     let odchylkastupne = Math.acos(odchylka)*(180/Math.PI);
 
     //Výstup/
