@@ -1,0 +1,355 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+:root {
+    --black-color: #090302;
+    --white-color: white;
+    --color-transition-1: #0bffd6;
+    --color-transition-2: rgba(188, 82, 239, 0.9);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#welcome-title, #welcome-section, #projects, #contact, #contact {
+    cursor: default;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--color-transition-2);
+}
+
+.nav-link {
+    color: var(--white-color);
+    text-decoration: none;
+    margin-right: 20px;
+    transition: all ease 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--color-transition-1);
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+
+}
+
+#welcome-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    color: var(--white-color);
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 25%;
+    text-align: center;
+    background-color: var(--black-color);
+    cursor: pointer;
+    transition: all ease-out 0.2s;
+}
+
+.item:hover {
+    width: 25%;
+}
+
+.item-photo {
+    width: 300px;
+    height: 200px;
+}
+
+.project-tile {
+    margin-top: 20px;
+}
+
+#profile-link {
+    margin-top: 50px;
+    color: black;
+    text-decoration: none;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
+h2 {
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid var(--white-color);
+    border-radius: 5px;
+}
+
+#contact textarea {
+    height: 200px;
+}
+
+#contact button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: var(--color-transition-2);
+}
+
+#profile-link {
+    display: block;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333;
+    color: var(--white-color);
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#profile-link:hover {
+    background-color: var(--color-transition-2);
+}
+
+.item {
+    display: inline-block;
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.item-photo {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.project-tile {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.item {
+    width: calc(33.33% - 10px);
+    height: 200px;
+    margin: 5px;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.item-photo {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project-title {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#profile-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#contact {
+    text-align: center;
+    padding: 50px;
+}
+
+h2 {
+    margin-bottom: 50px;
+}
+
+#contact h2 {
+    margin-bottom: 70px;
+}
+
+#contact .icons {
+    margin-top: 1rem;
+}
+
+#contact .icon {
+    font-size: 2.3rem;
+    padding: 1rem;
+    cursor: pointer;
+    color: var(--color-transition-2);
+    transition: all 0.3s ease;
+}
+
+#contact .icon:hover {
+    color: var(--color-transition-1);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+}
+
+input[type="submit"] {
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+    padding: 10px 20px;
+    background-color: var(--color-transition-1);
+    color: var(--white-color);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--color-transition-1);
+}
+
+#form {
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: rgb(188, 82, 239);
+    color: var(--white-color);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.5s ease;
+}
+
+.button:hover {
+    background-color: var(--white-color);
+    color: rgb(188, 82, 239);
+}
+
+@media screen and (max-width: 769px) {
+    #navbar {
+        padding: 1rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    #welcome-title {
+        font-size: 2.5rem;
+        padding: 0 1rem;
+    }
+
+    #welcome-section {
+        font-size: 1rem;
+    }
+
+    #projects {
+        font-size: 2rem;
+    }
+
+    .items {
+        flex-direction: column;
+    }
+
+    .item {
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
+
+    #h2 {
+        height: auto;
+    }
+
+    #contact h2 {
+        font-size: 1.5rem;
+    }
+
+    #contact {
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .icons {
+        margin: 0 0 3rem 0;
+    }
+}
